@@ -3,6 +3,8 @@ import 'firebase/auth';
 import 'firebase/firestore';
 
 import firebaseConfig from '../firebase/config'
+import { register } from '../serviceWorker';
+import { logIn, logOut } from 'ionicons/icons';
 
 class Firebase{
 
@@ -12,6 +14,27 @@ class Firebase{
         this.auth=app.auth()
         this.db =app.firestore();
     }
+}
+
+async register(name, email, password){
+    const newUser = await this.auth.createUserWithEmailAndPassword(
+        email, password
+    );
+    return newUser.user.updateProfile({
+        displayName: name
+    })
+}
+
+login(email,password){
+    return this.auth.signInWithEmailAndPAssword(email,password)
+}
+
+logout(){
+    return this.auth.signOut()
+}
+
+resetPassword(email){
+    return this.auth.sendPasswordResetEmail(email)
 }
 
 const firebase = new Firebase()
