@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDwtP49aN5kJysw9WR-EJ44szx5qx3_fxw",
-  authDomain: "newsy-4f92b.firebaseapp.com",
-  databaseURL: "https://newsy-4f92b.firebaseio.com",
-  projectId: "newsy-4f92b",
-  storageBucket: "newsy-4f92b.appspot.com",
-  messagingSenderId: "95207023692",
-  appId: "1:95207023692:web:b9cbcf59178393f27600e9",
+  apiKey: "AIzaSyDZS3yE5KghWaLXZL5pKBHSXFlhaNppNHo",
+  authDomain: "information-board-656c2.firebaseapp.com",
+  databaseURL: "https://information-board-656c2.firebaseio.com",
+  projectId: "information-board-656c2",
+  storageBucket: "information-board-656c2.appspot.com",
+  messagingSenderId: "304108555058",
+  appId: "1:304108555058:web:3017fe8897174c8748e52b",
+  measurementId: "G-ZYJBL90R1P"
 };
-
 export default firebaseConfig;
