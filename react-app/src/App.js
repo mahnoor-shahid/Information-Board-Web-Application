@@ -2,11 +2,15 @@ import React from 'react';
 import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Profile from './pages/Profile';
-import  Search from './pages/Search';
-import  Submit from './pages/Submit';
-import  News from './pages/News';
-import  Trending from './pages/Trending';
+import Profile from './pages/tabs/Profile';
+import  Search from './pages/tabs/Search';
+import  Submit from './pages/tabs/Submit';
+import  News from './pages/tabs/News';
+import  Trending from './pages/tabs/Trending';
+import  EditProfile from './pages/tabs/Auth/EditProfile';
+import  SignUp from './pages/tabs/Auth/SignUp';
+import  Login from './pages/tabs/Auth/Login';
+import  Forgot from './pages/tabs/Auth/Forgot';
 import {newspaperOutline, personCircleOutline, searchOutline, createOutline, trendingUpOutline} from "ionicons/icons"
 
 /* Core CSS required for Ionic components to work properly */
@@ -44,6 +48,10 @@ const App = () => (
               <Route path="/submit" component={Submit} />
               <Route path="/search" component={Search} />
               <Route path="/profile" component={Profile} />
+              <Route path ="/editProfile" component={EditProfile} />
+              <Route path="/forgot" component={Forgot} />
+              <Route path="/login" component={Login} />
+              <Route path="/register" component={SignUp} />
 
             <Route component={() => <Redirect to ="/news" />} />
       </IonRouterOutlet>
