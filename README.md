@@ -1,6 +1,6 @@
 # Information-Board-Web-Application
 
-This project is an implementation of a web application based on react with a default structure for information board designed for web and mobile.
+This project is an implementation of a web application based on react with a default structure for information board designed for mobile.
 
 # Prerequisites
  - Javascript
